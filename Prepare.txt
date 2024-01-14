@@ -1,0 +1,1 @@
+The repositories is about a basic java language, its like descrption and print variable. array, etc.
