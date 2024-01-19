@@ -41,17 +41,51 @@ public class Basic4Math {
             System.out.print("Masukkan angka ke-" + i + " : ");
             b[i] = scan.nextInt();
         }
-        
-        System.out.println("Isi Array : ");
+       
+        System.out.println("\nIsi Array : ");
         for (int i = 1; i <=a; i++) {
             System.out.println("Index ke-" + i + " : " + b[i]);
         }
+         
+        int max = b[1];
+        for (int i = 2; i <= a; i++) {
+            if (b[i] > max) {
+                max = b[i];
+            }
+        }
+        System.out.print("\n\nNilai tertinggi = " + max + "\n\n");
+    }
+    
+    private static int pangkat(int a) {
+        return (int) (Math.sqrt(a));
+    }
+    
+    private void kuadrat() {
+        Scanner scan = new Scanner(System.in);
+        System.out.println("Masukkan panjang array");
+        int a = scan.nextInt();
+        int[] b = new int[a + 1];
+
+        for (int i = 1; i <= a; i++) {
+            System.out.print("Masukkan nilai ke-" + i + " : ");
+            b[i] = scan.nextInt();
+        }
         
-        System.out.print("\n\nNilai tertinggi = " + (Math.max(b[i], b[i])));
+        System.out.println("\nIsi Array : ");
+        for (int i = 1; i <= a; i++) {
+            System.out.println("Index ke-" + i + " : " + b[i]);
+        }
+        
+        int sqre = b[1];
+        for (int i = 1; i <= a; i++){
+            if()
+        }
     }
 
     public static void main(String[] args) {
         Basic4Math obj = new Basic4Math();
+        Scanner scan = new Scanner(System.in);
+        boolean i = true;
         
         System.out.println("===== Declare =====");
         System.out.println(Math.max(10, 20));   // use to find highest value
@@ -62,13 +96,19 @@ public class Basic4Math {
 
         int randomNum = (int) (Math.random() * 100); // will random 0 to 100
         System.out.println(randomNum);
-        
+
         System.out.println("\n\n===== Nilai tertinggi ======");
         obj.undec();
-        
+
         System.out.println("\n\n===== Comb Array =====");
         obj.matharray();
 
-    }
+        System.out.println("\n\n====== Mencari hasil Kuadrat ======");
+        System.out.print("Inputkan angka : ");
+        int a = scan.nextInt();
+        int z = pangkat(a);
+        System.out.print(a + " nilai kuadrat dari : " + z + "\n\n");
 
+        
+    }
 }
