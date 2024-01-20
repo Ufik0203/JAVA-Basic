@@ -2,7 +2,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
  */
-package basic.pkg4.pkgboolean;
+package basic.pkg5.pkgboolean;
 
 import java.util.Scanner;
 
@@ -10,7 +10,7 @@ import java.util.Scanner;
  *
  * @author mario
  */
-public class Basic4Boolean {
+public class Basic5Boolean {
 
     /**
      * @param args the command line arguments
