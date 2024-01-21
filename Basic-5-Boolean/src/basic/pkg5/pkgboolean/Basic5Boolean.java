@@ -28,7 +28,7 @@ public class Basic5Boolean {
         boolean c = true;
         
         System.out.println("/n/n===== User input ======");
-        while (c) {
+        while (c) { // while c, it mean while user do the coreect input (true), it will be loop
             System.out.println("1 . Inputkan angka ke-1");
             System.out.println("2 . Inputkan angka ke-2");
             System.out.println("3 . Exit");
