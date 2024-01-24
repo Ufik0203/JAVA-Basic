@@ -42,9 +42,30 @@ public class Basic7SwitchCase {
         
     }
     
+    private void casedwhile() {
+        Scanner scan = new Scanner(System.in);
+        int a;
+        System.out.print("Masukkan panjang array : ");
+        a = scan.nextInt();
+        int[] b = new int[a +1];
+        
+        for (int i = 1; i <= a; i++) {
+            System.out.print("Masukkan nilai array ke " + i + " : ");
+            b[i] = scan.nextInt();
+        }
+        
+        System.out.println("Isi Array : ");
+        for (int i =1; i <=  a; i++) {
+            System.out.println("Index ke "+ i + " = " + b[i]);
+        }
+    }
+    
     public static void main(String[] args) {
         Basic7SwitchCase obj = new Basic7SwitchCase();
         obj.cased();
+        
+        System.out.println("\n\n====== with Array ======");
+        obj.casedwhile();
     }
     
 }
