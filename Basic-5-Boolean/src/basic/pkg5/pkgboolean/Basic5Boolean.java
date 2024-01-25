@@ -27,7 +27,7 @@ public class Basic5Boolean {
         int a = 0, b = 0;
         boolean c = true;
         
-        System.out.println("/n/n===== User input ======");
+        System.out.println("\n\n ===== User input ======");
         while (c) { // while c, it mean while user do the coreect input (true), it will be loop
             System.out.println("1 . Inputkan angka ke-1");
             System.out.println("2 . Inputkan angka ke-2");
@@ -44,11 +44,11 @@ public class Basic5Boolean {
                     System.out.print("Masukkan inputkan ke-2 : ");
                     b = scan.nextInt();
                     if (a > b) {
-                        System.out.println(a + " Lebih besar dari " + b);
+                        System.out.println("\n" + a + " Lebih besar dari " + b);
                     }
                     
                     if (a < b) {
-                        System.out.println(a + " Lebih kecil dari " + b);
+                        System.out.println("\n" + a + " Lebih kecil dari " + b);
                     }
                     break;
                 case 3:
