@@ -44,7 +44,8 @@ public class Basic7SwitchCase {
     
     private void casedwhile() {
         Scanner scan = new Scanner(System.in);
-        int a;
+        int a,z,e,f;
+        boolean c = true;
         System.out.print("Masukkan panjang array : ");
         a = scan.nextInt();
         int[] b = new int[a +1];
@@ -53,10 +54,42 @@ public class Basic7SwitchCase {
             System.out.print("Masukkan nilai array ke " + i + " : ");
             b[i] = scan.nextInt();
         }
-        
+
         System.out.println("Isi Array : ");
         for (int i =1; i <=  a; i++) {
             System.out.println("Index ke "+ i + " = " + b[i]);
+        }
+        
+        while(c){
+            System.out.println("Apakah ingin membandingkan nilai Array?");
+            System.out.println("1. Ya");
+            System.out.println("2. Tidak");
+            z = scan.nextInt();
+            
+            switch (z) {
+                case 1:
+                    System.out.println("Dari Array diatas, terdapat " + b.length);
+                    System.out.println("\n---- Masukkan index yang ingin di bandingkan di bawah ----");
+                    System.out.print("Index : ");
+                    e = scan.nextInt();
+
+                    System.out.print("Dengan Index : ");
+                    f = scan.nextInt();
+
+                    System.out.println("Index ke " + e + " memiliki nilai " + b[e]);
+                    System.out.println("Index ke " + f + " memiliki nilai " + b[f]);
+                    if (b[e] >= b[f]) {
+                        System.out.println("Index ke " + e + " lebih besar dari index ke " + f);
+                    } else if (b[e] <= b[f]) {
+                        System.out.println("Index ke " + e + " lebih kecil dari index ke " + f);
+                    } else {
+                        System.out.println("Index ke " + e + " memiliki nilai yang sama dengan index ke " + f);
+                    }
+                    break;
+                case 2:
+                    System.out.println("===== TERIMA KASIH =====");
+                    c = false;
+            }
         }
     }
     
