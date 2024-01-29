@@ -38,5 +38,4 @@ public class Basic9ForLoop {
         
         obj.forlp();
     }
-    
 }
