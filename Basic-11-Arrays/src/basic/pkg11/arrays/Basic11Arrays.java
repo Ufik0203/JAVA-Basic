@@ -51,14 +51,76 @@ public class Basic11Arrays {
         }
     }
     
-    private void Arr1x2() {
+    private void Arr2D() {
+        Scanner scan = new Scanner(System.in);
+        int a,b;
+        System.out.print("Masukkan panjang array a : ");
+        a = scan.nextInt();
+        System.out.print("\nMasukkan panjang array b : ");
+        b = scan.nextInt();
         
+        int[][] c = new int [a][b];
+        
+        for (int i = 0; i < a; i++) {
+            for (int j = 0; j < b; j++) {
+                System.out.print("Masukkan nilai array indeks ke "+ "[ " + i + " ]" + "[ " + j + " ]" + " : ");
+                c[i][j] = scan.nextInt();
+            }
+            System.out.println("");
+        }
+        
+        
+        System.out.println("\n===== Isi Array 2D ======");
+        for (int i = 0; i < a; i++) {
+            for (int j = 0; j < b; j++) {
+                System.out.print(c[i][j] + " ");
+            }
+            System.out.println("");
+        }
+    }
+    
+    private void Arr3D() {
+        Scanner scan = new Scanner(System.in);
+        int a,b,c;
+        System.out.print("Masukkan panjang array a : ");
+        a = scan.nextInt();
+        System.out.print("Masukkan panjang array b : ");
+        b = scan.nextInt();
+        System.out.print("Masukkan panjang array c : ");
+        c = scan.nextInt();
+        
+        int [][][] d = new int [a][b][c];
+        
+        for (int i = 0; i < a; i++) {
+            for (int j = 0; j < b; j++) {
+                for (int k = 0; k < c; k++) {
+                    System.out.print("Masukkan nilai array indeks ke " + "[ " + i + " ]" + "[ " + j + " ]" + "[ " + k  + " ]" + " : ");
+                    d[i][j][k] = scan.nextInt();
+                }
+                System.out.println("");
+            }
+            System.out.println("");
+        }
+        
+        
+        System.out.println("\n====== Isi Array 3D ======");
+        for (int i = 0; i < a; i++) {
+            for (int j = 0; j < b; j++) {
+                for (int k = 0; k < c; k++) {
+                    System.out.print(d[i][j][k]+" ");
+                }
+                System.out.println("");
+            }
+            System.out.println("");
+        }
     }
     
     public static void main(String[] args) {
         Basic11Arrays obj = new Basic11Arrays();
         obj.Arr1x1f0();
         obj.Arr1x1f1();
+        obj.Arr2D();
+        obj.Arr3D();
     }
     
 }
