@@ -15,9 +15,11 @@ public class Basic1 {
      */
     public static void main(String[] args) {
         String a = "Hello World"; // String for text, number, etc.
+        String c = "20";
         int b = 10; // Integer for number.
         
         System.out.println(a);
         System.out.println(b);
+        System.out.println(c);
     }   
 }
